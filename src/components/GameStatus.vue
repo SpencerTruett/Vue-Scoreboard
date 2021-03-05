@@ -12,11 +12,19 @@ export default {
 
       if (team1.score > team2.score) {
         const scoreDiff = team1.score - team2.score;
-        return `${team1.name} is leading ${team2.name} by ${scoreDiff}!`;
+        if (scoreDiff > 1) {
+          return `${team1.name} is leading ${team2.name} by ${scoreDiff} points!`;
+        } else {
+          return `${team1.name} is leading ${team2.name} by ${scoreDiff} point!`;
+        }
       }
       if (team1.score < team2.score) {
         const scoreDiff = team2.score - team1.score;
-        return `${team2.name} is leading ${team1.name} by ${scoreDiff}!`;
+        if (scoreDiff > 1) {
+          return `${team2.name} is leading ${team1.name} by ${scoreDiff} points!`;
+        } else {
+          return `${team2.name} is leading ${team1.name} by ${scoreDiff} point!`;
+        }
       }
 
       return "The game is tied!";
