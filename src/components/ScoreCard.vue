@@ -14,10 +14,10 @@ export default {
 
   methods: {
     addPoint() {
-      this.$emit("addPoint");
+      this.$emit("pointsIncrease");
     },
     subtractPoint() {
-      this.$emit("subtractPoint");
+      this.$emit("pointsDecrease");
     }
   }
 };

@@ -3,14 +3,14 @@
     <MatchupTitle :team1="team1" :team2="team2" />
     <ScoreCard
       :score="team1.score"
-      @addPoint="updateScore(team1, 1)"
-      @subtractPoint="updateScore(team1, -1)"
+      @pointsIncrease="updateScore(team1, 1)"
+      @pointsDecrease="updateScore(team1, -1)"
     />
 
     <ScoreCard
       :score="team2.score"
-      @addPoint="updateScore(team2, 1)"
-      @subtractPoint="updateScore(team2, -1)"
+      @pointsIncrease="updateScore(team2, 1)"
+      @pointsDecrease="updateScore(team2, -1)"
     />
   </div>
 </template>
