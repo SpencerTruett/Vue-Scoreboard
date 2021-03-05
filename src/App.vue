@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <MatchupTitle :team1="team1" :team2="team2" />
+    <GameStatus :team1="team1" :team2="team2" />
     <ScoreCard
       :score="team1.score"
       @pointsIncrease="updateScore(team1, 1)"
@@ -18,11 +19,13 @@
 <script>
 import MatchupTitle from "./components/MatchupTitle";
 import ScoreCard from "./components/ScoreCard";
+import GameStatus from "./components/GameStatus";
 
 export default {
   components: {
     MatchupTitle,
-    ScoreCard
+    ScoreCard,
+    GameStatus
   },
   data() {
     return {
