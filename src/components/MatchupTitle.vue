@@ -16,17 +16,14 @@
 </template>
 
 <script>
+import { team1 } from "../data";
+import { team2 } from "../data";
+
 export default {
   data() {
     return {
-      team1: {
-        name: "Team 1",
-        score: 0
-      },
-      team2: {
-        name: "Team 2",
-        score: 0
-      }
+      team1: team1,
+      team2: team2
     };
   }
 };
