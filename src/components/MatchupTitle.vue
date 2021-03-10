@@ -1,12 +1,12 @@
 <template>
   <div>
     <h2>
-      <div
+      <span
         :class="{ winning: team1.score > team2.score, losing: team1.score < team2.score }"
-      >{{ team1.name }}</div>vs
-      <div
+      >{{ team1.name }}</span> vs
+      <span
         :class="{ winning: team2.score > team1.score, losing: team2.score < team1.score }"
-      >{{ team2.name }}</div>
+      >{{ team2.name }}</span>
     </h2>
   </div>
 </template>
@@ -23,5 +23,9 @@ export default {
 }
 .losing {
   color: red;
+}
+h2 {
+  font-size: 8vw;
+  margin-bottom: 0;
 }
 </style>

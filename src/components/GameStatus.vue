@@ -1,5 +1,7 @@
 <template>
-  <div>{{gameLeaderDisplay}}</div>
+  <div class="status">
+    <div>{{gameLeaderDisplay}}</div>
+  </div>
 </template>
 
 <script>
@@ -33,5 +35,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.status {
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
 </style>
